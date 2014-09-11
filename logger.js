@@ -4,6 +4,10 @@
 /**
 *	---------------- Changelog -----------------------
 *
+<<<<<<< HEAD
+=======
+* 	- CHANGEMENT DU CHANGELOG -
+>>>>>>> origin/master
 *	V0.2 - H - 24/07/2014 (Domicile Pneu)
 *	- Ajout d'un mini objet gestionScrollbar afin de bloquer le scroll lors de l'affichage des boites de confirmation
 *	- /!\ Attention si vous souhaitez bloquer la scrollbar toutes les autres le seront aussi /!\
