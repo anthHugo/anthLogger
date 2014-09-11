@@ -1,6 +1,6 @@
 // Fichier UTF-8 (é)
 // Objet statique commun à l'application, pas utile d'instancier 
-
+// Edition a la maison
 /**
 *	---------------- Changelog -----------------------
 *
