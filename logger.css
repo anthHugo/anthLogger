@@ -1,0 +1,79 @@
+/* CSS pour la librairie Logger.js qui réécrit les methode alert() et confirm() */
+#logger_container {
+	display: block;
+	position:fixed;
+	top:25px;
+	width:100%;
+	z-index: 999;
+}
+
+#logger_container .logger_message {
+	width:800px;
+	left:130px;
+	margin:auto;
+	line-height: 20px;
+	color:white;
+	position:relative;
+	display:none;
+}
+
+#logger_container .logger_message:last-child {
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;	
+	box-shadow: 0px 5px 5px #999; 
+}
+
+#logger_container .logger_message .logger_texte {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width:100%!important;
+	padding:8px 30px 8px 10px;
+	display: block;
+	margin:auto;
+	color:white;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 0px -1px 0px #000, 0px 0px 3px #000;
+}
+
+#logger_container .logger_message .logger_close {
+	position:absolute;
+	display: block;
+	top:11px;
+	right:15px;
+	font-size: 24px;
+	cursor:pointer;
+	z-index:1000!important;
+	text-shadow: 0px -1px 0px #000;
+}	
+
+
+#logger_container .logger_message.succes {
+	background-color: #94b24f;
+	border-left:1px solid #627a2d;
+	border-right:1px solid #627a2d;
+	border-bottom:1px solid #627a2d;
+}
+
+#logger_container .logger_message.erreur {
+	background-color: #f45f64;
+	border-left:1px solid #ee4145;
+	border-right:1px solid #ee4145;
+	border-bottom:1px solid #ee4145;
+}
+
+#logger_container .logger_message.info {
+	background-color: #60a4c9;
+	border-left:1px solid #206387;
+	border-right:1px solid #206387;
+	border-bottom:1px solid #206387;
+}
+.logger_confirm {border-radius: 0!important;}
+.logger_confirm div.ui-dialog-content { padding:10px; display:table-cell; vertical-align:middle; margin-top:0; margin-bottom: 0; width:550px!important; }
+.logger_confirm div.ui-dialog-buttonpane {border:none; margin-top:0;}
+.logger_confirm button, .logger_confirm button .ui-state-hover, .logger_confirm button .ui-state-active{ padding: 2px 10px 2px 10px!important;height: auto!important; }
+.logger_confirm button span {border:none;padding:0!important; font-weight: bold!important; }
+/* CSS pour la boite de dialog jQuery */
